@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>{{title}} | Ticketz</title>
+      
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"/>
+      
+      <!-- Library / Plugin Css Build -->
+      <link rel="stylesheet" href="{% static 'css/core/libs.min.css' %}" />
+      
+      <!-- Gigz Design System Css -->
+      <link rel="stylesheet" href="{% static 'css/gigz.min.css' %}" />
+      
+      <!-- Custom Css -->
+      <link rel="stylesheet" href="{% static 'css/custom.min.css' %}" />
+      
+      <!-- fontawsome Css Build -->
+      <link rel="stylesheet" href="{% static 'vendor/@fortawesome/fontawesome-free/css/all.min.css' %}">
+      
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  </head>
+  <body class=" landing-content ">
+    <span class="screen-darken"></span>
+    <!-- loader Start -->
+    <div id="loading">
+      <div class="loader ">
+          <div class="loader-body word-spacing">
+              <h1 class="loader-title fw-bold">TICKETZ</h1>
+          </div>
+      </div>    </div>
+    <!-- loader END -->
+    {% block content %}
+    
+    {% endblock %}
+    <!-- Wrapper End-->
+    <!-- Library Bundle Script -->
+    <script src="{% static 'js/core/libs.min.js' %}"></script>
+    
+    <!-- External Library Bundle Script -->
+    <script src="{% static 'js/core/external.min.js' %}"></script>
+    
+    <!-- Widgetchart Script -->
+    <script src="{% static 'js/charts/widgetcharts.js' %}"></script>
+    
+    <!-- mapchart Script -->
+    <script src="{% static 'js/charts/vectore-chart.js' %}"></script>
+    <script src="{% static 'js/charts/dashboard.js' %}" defer></script>
+    
+    <!-- fslightbox Script -->
+    <script src="{% static 'js/plugins/fslightbox.js' %}"></script>
+    
+    <!-- GSAP Animation -->
+    <script src="{% static 'vendor/gsap/gsap.min.js' %}"></script>
+    <script src="{% static 'vendor/gsap/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/gsap-init.js' %}"></script>
+    
+    <!-- Form Wizard Script -->
+    <script src="{% static 'js/plugins/form-wizard.js' %}"></script>
+    
+    <!-- App Script -->
+    <script src="{% static 'js/gigz.js' %}" defer></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  </body>
+</html>
